@@ -1,0 +1,31 @@
+name: 🐛 Bug Report
+description: File a bug report
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+    validations:
+      required: true
+  - type: input
+    id: platform-version
+    attributes:
+      label: Platform Version
+  - type: input
+    id: app-version
+    attributes:
+      label: App Version
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: Text
